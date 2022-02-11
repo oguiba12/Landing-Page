@@ -88,10 +88,11 @@ img {
       
       nav ul li:hover > ul {
         display: block;
+      
       }
       
       nav ul li:hover > ul li {
-        display: block;
+        display: inline-block;
         opacity: 1;
         border-radius: 0.2rem;
         line-height: 1rem;
@@ -126,5 +127,33 @@ img {
           rgb(97, 0, 53)
         );
         border: none;
+      }
+
+      main {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        width: 100vw;
+        height: 60vh;
+        margin-top: 10rem;
+        z-index: 1;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 0, 0, 0.152);
+        width: 30%;
+        height: 100%;
+        margin: 0rem 2rem;
+        border-radius: 1rem;
+        border: solid 0.1rem white;
+        padding: 1rem 1rem;
+        color: rgba(255, 255, 255, 0.679);
+      }
+
+      .container:hover {
+        background-color: rgba(255, 0, 0, 0.302);
       }
 }
